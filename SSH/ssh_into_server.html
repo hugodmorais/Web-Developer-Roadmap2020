@@ -1,0 +1,40 @@
+Quick Note: SSH Into A Server
+In the previous video I showed you how to add SSH keys to the authorized_keys  
+of a Digital Ocean Server. Afterwards, I also showed you how to add it on the Digital 
+Ocean control panel. Keep in mind that you cannot, use the control panel in Digital Ocean 
+to add keys to already created droplets. You either have to create a new server after 
+you've added the SSH key on the control panel, or add it manually to the authorized_keys 
+
+Also, if you are on Windows, you may have to use GitBash instead of Powershell. Here are 
+the steps that a fellow student followed:
+
+1. Download, install and open Git Bash - the link is provided at the end of the video.
+
+2. Type "ssh-agent bash" and press Enter.
+
+3. Type "ssh-add ~/.ssh/id_rsa_digitalocean" and press Enter. You should get confrimation of 
+Identity added.
+
+4. Try connecting to your digital ocean account again via SSH. Now it shouldn't ask you for 
+the password!
+
+# ------------------------------------------------------------ #
+
+Resources: SSH Into A Server
+Recommended ssh-keygen  command:
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+Windows: 
+If you have Git for Windows (which you should), ssh-keygen command should be available: 
+https://gitforwindows.org/
+You can read more about this here
+Another option is to use https://www.ssh.com/ssh/putty/windows/puttygen
+
+pbcopy  command: https://superuser.com/questions/472598/pbcopy-for-windows/1171448#1171448
+
+
+
+Extra Video:
+If you want to learn a little bit more about how SSH works internally, watch this excellent 
+video: https://youtu.be/ORcvSkgdA58
