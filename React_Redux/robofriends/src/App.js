@@ -8,7 +8,7 @@ class App extends React.Component {
     super()
     this.state = {
       robots: robots,
-      searchfields: ''
+      searchfield: ''
     }
   }
 
