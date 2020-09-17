@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
