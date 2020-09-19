@@ -1,7 +1,24 @@
-var sum = (a : number, b : number) => {
+const sum = (a : number, b : number) => {
   return a + b;
 }
 
-var answer = sum(4, 5);
+const answer = sum(6, 5);
 
 console.log(answer)
+
+// boolean
+let isCool: boolean = true;
+
+// number
+let age: number = 56;
+
+//string
+let eyeColor: string = 'brown';
+
+// Array
+let pets: string[] = ['cat', 'dog', 'pig']
+
+// Object
+let wizard: object = {
+  a: 'John'
+}
