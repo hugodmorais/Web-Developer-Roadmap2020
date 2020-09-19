@@ -15,3 +15,29 @@ var pets = ['cat', 'dog', 'pig'];
 var wizard = {
     a: 'John'
 };
+// Tuple
+var basket;
+basket = ['basketball', 5];
+// Enum 
+var Size;
+(function (Size) {
+    Size[Size["Small"] = 1] = "Small";
+    Size[Size["Medium"] = 2] = "Medium";
+    Size[Size["Large"] = 3] = "Large";
+})(Size || (Size = {}));
+var sizeName = Size[2];
+// Any - !!!!!!! Be Careful
+var whatever = 'aaaaaaaaaaahhhhhhhhhhhhhh!!!!';
+whatever = 5;
+whatever = Size;
+// void
+var sing = function () {
+    console.log('ffff');
+};
+// never
+var error = function () {
+    throw Error('ooops');
+};
+var fightRobotArny = function (robots) {
+    console.log('FIGHT!');
+};

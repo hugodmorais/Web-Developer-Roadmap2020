@@ -22,3 +22,37 @@ let pets: string[] = ['cat', 'dog', 'pig']
 let wizard: object = {
   a: 'John'
 }
+
+// Tuple
+let basket: [string, number];
+basket = ['basketball', 5]
+
+// Enum 
+enum Size { Small = 1, Medium = 2, Large = 3 }
+let sizeName: string = Size[2];
+
+// Any - !!!!!!! Be Careful
+let whatever: any = 'aaaaaaaaaaahhhhhhhhhhhhhh!!!!'
+whatever = 5
+whatever = Size
+
+// void
+let sing = (): void => {
+  console.log('ffff')
+}
+
+// never
+let error = (): never => {
+  throw Error('ooops');
+}
+
+// interface
+interface RobotArny {
+  count: number,
+  type: string,
+  magic: string
+}
+
+let fightRobotArny = ( robots: RobotArny ) => {
+  console.log('FIGHT!')
+}
